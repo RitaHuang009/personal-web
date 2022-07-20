@@ -1,0 +1,39 @@
+.header {
+    height: 100vh;
+    &-bg {
+        background: url(../images/header-banner.png) no-repeat center center;
+        background-size: cover;
+        border: 1px solid $light-gray;
+    }
+    .wrap {
+        max-width: 304px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social-icon{
+        display: flex;
+        align-items: center;
+        img:not(:first-child){
+            margin-left: 16px;
+        }
+        img{
+            cursor: pointer;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+.footer{
+    margin-top: 144px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
